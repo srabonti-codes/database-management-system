@@ -1,0 +1,51 @@
+INDEX TYPES
+
+An index is a data structure used to speed up data retrieval from a database table.
+
+1. PRIMARY INDEX
+
+Created based on the primary key.
+
+It helps efficiently locate records using the primary key.
+
+2. UNIQUE INDEX
+
+Ensures that indexed values are unique.
+
+Example:
+
+CREATE UNIQUE INDEX idx_email
+ON users(email);
+
+3. CLUSTERED INDEX
+
+Determines the physical order of data records in systems that support clustered indexes.
+
+A table generally has one clustered index.
+
+4. NON-CLUSTERED INDEX
+
+Stores index entries separately from the actual table data.
+
+A table can have multiple non-clustered indexes.
+
+5. COMPOSITE INDEX
+
+An index created using multiple columns.
+
+Example:
+
+CREATE INDEX idx_department_age
+ON students(department, age);
+
+6. FULL-TEXT INDEX
+
+Used for efficient searching of text data.
+
+It is useful for searching words and phrases within large text fields.
+
+7. HASH INDEX
+
+Uses a hash-based structure to locate records quickly for equality searches.
+
+Index selection depends on the database system and query workload.

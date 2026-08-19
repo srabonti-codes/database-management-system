@@ -1,0 +1,44 @@
+SECOND NORMAL FORM (2NF)
+
+A table is in Second Normal Form when:
+
+1. It is already in 1NF.
+2. It has no partial dependency.
+
+Partial dependency occurs when a non-key attribute depends on only part of a composite primary key.
+
+Example:
+
+Student_ID | Course_ID | Student_Name | Course_Name
+-----------|-----------|--------------|------------
+1          | 101       | Rahim        | DBMS
+1          | 102       | Rahim        | DSA
+
+Primary Key:
+(Student_ID, Course_ID)
+
+Student_Name depends only on Student_ID.
+
+Course_Name depends only on Course_ID.
+
+To achieve 2NF, separate the tables:
+
+STUDENTS
+
+Student_ID | Student_Name
+-----------|-------------
+1          | Rahim
+
+COURSES
+
+Course_ID | Course_Name
+----------|------------
+101       | DBMS
+102       | DSA
+
+ENROLLMENTS
+
+Student_ID | Course_ID
+-----------|----------
+1          | 101
+1          | 102

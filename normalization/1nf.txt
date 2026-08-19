@@ -1,0 +1,25 @@
+FIRST NORMAL FORM (1NF)
+
+A table is in First Normal Form when:
+
+1. Each column contains atomic values.
+2. There are no repeating groups.
+3. Each row is uniquely identifiable.
+
+Example of a table that violates 1NF:
+
+Student_ID | Name  | Courses
+-----------|-------|-----------------------
+1          | Rahim | DBMS, DSA, Algorithms
+
+The Courses column contains multiple values.
+
+1NF version:
+
+Student_ID | Name  | Course
+-----------|-------|----------------
+1          | Rahim | DBMS
+1          | Rahim | DSA
+1          | Rahim | Algorithms
+
+The values are now atomic.

@@ -1,0 +1,41 @@
+THIRD NORMAL FORM (3NF)
+
+A table is in Third Normal Form when:
+
+1. It is already in 2NF.
+2. It has no transitive dependency.
+
+A transitive dependency occurs when a non-key attribute depends on another non-key attribute.
+
+Example:
+
+Student_ID | Student_Name | Department_ID | Department_Name
+-----------|--------------|---------------|----------------
+1          | Rahim        | 10            | CSE
+2          | Karim        | 20            | EEE
+
+Student_ID determines Department_ID.
+
+Department_ID determines Department_Name.
+
+Therefore:
+
+Student_ID -> Department_ID -> Department_Name
+
+This creates a transitive dependency.
+
+3NF version:
+
+STUDENTS
+
+Student_ID | Student_Name | Department_ID
+-----------|--------------|--------------
+1          | Rahim        | 10
+2          | Karim        | 20
+
+DEPARTMENTS
+
+Department_ID | Department_Name
+--------------|----------------
+10            | CSE
+20            | EEE

@@ -1,0 +1,95 @@
+DBMS VS FILE SYSTEM
+
+FILE SYSTEM
+
+A file system stores and manages data using files and directories provided by an operating system.
+
+DBMS
+
+A DBMS is software designed specifically to store, organize, retrieve, and manage structured data.
+
+COMPARISON
+
+1. Data Redundancy
+
+File System:
+Data redundancy can be high because the same data may be stored in multiple files.
+
+DBMS:
+Redundancy can be reduced through proper database design and normalization.
+
+2. Data Consistency
+
+File System:
+Maintaining consistent data across multiple files can be difficult.
+
+DBMS:
+Provides mechanisms to maintain data consistency.
+
+3. Data Security
+
+File System:
+Security mainly depends on operating system file permissions.
+
+DBMS:
+Provides authentication, authorization, roles, and access control.
+
+4. Data Sharing
+
+File System:
+Sharing data between multiple applications can be difficult.
+
+DBMS:
+Multiple users and applications can access shared data.
+
+5. Data Integrity
+
+File System:
+Integrity rules generally need to be handled by applications.
+
+DBMS:
+Supports constraints such as primary key, foreign key, unique, and check constraints.
+
+6. Concurrency
+
+File System:
+Concurrent access can be difficult to manage safely.
+
+DBMS:
+Provides concurrency control for multiple users.
+
+7. Backup and Recovery
+
+File System:
+Backup and recovery usually require separate tools or manual procedures.
+
+DBMS:
+Provides backup and recovery mechanisms.
+
+8. Query Processing
+
+File System:
+Usually requires custom application logic to search and process data.
+
+DBMS:
+Provides query languages such as SQL.
+
+9. Transactions
+
+File System:
+Does not normally provide full database transaction management.
+
+DBMS:
+Supports transactions using properties such as ACID.
+
+10. Scalability
+
+File System:
+Suitable for simple and small-scale data storage.
+
+DBMS:
+Better suited for large and complex data systems.
+
+CONCLUSION
+
+A file system is suitable for simple file-based storage, while a DBMS is more suitable for structured, shared, secure, and large-scale data management.

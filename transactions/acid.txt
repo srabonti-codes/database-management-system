@@ -1,0 +1,40 @@
+ACID PROPERTIES
+
+ACID stands for:
+
+A - Atomicity
+C - Consistency
+I - Isolation
+D - Durability
+
+1. ATOMICITY
+
+A transaction is treated as a single unit.
+
+Either all operations are completed or none of them are completed.
+
+Example:
+
+A money transfer includes:
+- Deduct money from Account A
+- Add money to Account B
+
+If one operation fails, the entire transaction can be rolled back.
+
+2. CONSISTENCY
+
+A transaction must take the database from one valid state to another valid state.
+
+Database constraints and rules must remain satisfied.
+
+3. ISOLATION
+
+Concurrent transactions should not interfere with each other in a way that produces incorrect results.
+
+Each transaction should behave as if it is executing independently.
+
+4. DURABILITY
+
+Once a transaction is successfully committed, its changes should remain stored even if the system crashes.
+
+ACID properties help maintain reliable and consistent database transactions.

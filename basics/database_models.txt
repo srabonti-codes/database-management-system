@@ -1,0 +1,152 @@
+DATABASE MODELS
+
+A database model defines how data is organized, stored, and related within a database.
+
+1. HIERARCHICAL DATABASE MODEL
+
+Data is organized in a tree-like structure.
+
+Each child can have only one parent.
+
+Example:
+
+Company
+|
+|-- Department
+|   |
+|   |-- Employee
+|
+|-- Department
+    |
+    |-- Employee
+
+Advantages:
+- Simple structure
+- Fast navigation
+
+Disadvantages:
+- Difficult to represent many-to-many relationships
+- Less flexible for complex data
+
+2. NETWORK DATABASE MODEL
+
+Data is organized as records connected through relationships.
+
+A record can have multiple parent and child records.
+
+Advantages:
+- Supports complex relationships
+- Efficient navigation
+
+Disadvantages:
+- Complex structure
+- Difficult to maintain
+
+3. RELATIONAL DATABASE MODEL
+
+Data is organized into tables consisting of rows and columns.
+
+Examples:
+MySQL
+PostgreSQL
+Oracle
+SQL Server
+
+Example:
+
+STUDENT
+
+ID | Name   | Department
+---|--------|-----------
+1  | Rahim  | CSE
+2  | Karim  | EEE
+
+Advantages:
+- Simple structure
+- Uses SQL
+- Strong data integrity
+- Supports relationships between tables
+
+4. OBJECT-ORIENTED DATABASE MODEL
+
+Data is stored as objects similar to objects in object-oriented programming.
+
+Objects can contain both data and methods.
+
+Advantages:
+- Supports object-oriented concepts
+- Suitable for complex data
+
+Disadvantages:
+- Less commonly used than relational databases
+- Can be more complex
+
+5. OBJECT-RELATIONAL DATABASE MODEL
+
+Combines features of relational and object-oriented database models.
+
+It stores data in tables while supporting object-oriented features.
+
+6. DOCUMENT DATABASE MODEL
+
+Data is stored as documents, commonly using JSON-like structures.
+
+Examples:
+MongoDB
+CouchDB
+
+Example:
+
+{
+    "name": "Rahim",
+    "department": "CSE",
+    "semester": 8
+}
+
+Advantages:
+- Flexible schema
+- Suitable for unstructured and semi-structured data
+- Easy to scale horizontally
+
+7. KEY-VALUE DATABASE MODEL
+
+Data is stored as key-value pairs.
+
+Example:
+
+Key: student_101
+Value: "Rahim"
+
+Examples:
+Redis
+Amazon DynamoDB
+
+Advantages:
+- Very fast lookup
+- Simple structure
+- Highly scalable
+
+8. GRAPH DATABASE MODEL
+
+Data is represented using nodes and edges.
+
+Nodes represent entities, while edges represent relationships.
+
+Examples:
+Neo4j
+Amazon Neptune
+
+Advantages:
+- Excellent for highly connected data
+- Efficient relationship queries
+
+COMMON DATABASE MODELS
+
+Hierarchical
+Network
+Relational
+Object-Oriented
+Object-Relational
+Document
+Key-Value
+Graph

@@ -1,0 +1,1 @@
+Structured DBMS and SQL practice covering database fundamentals, queries, constraints, joins, normalization, transactions, indexing, and views.

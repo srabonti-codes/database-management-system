@@ -1,0 +1,77 @@
+DBMS CONCEPTS
+
+A Database Management System (DBMS) is software used to create, store, organize, manage, and retrieve data from a database.
+
+Examples:
+MySQL
+PostgreSQL
+Oracle
+Microsoft SQL Server
+SQLite
+
+Main Functions of DBMS:
+1. Data storage
+2. Data retrieval
+3. Data insertion
+4. Data updating
+5. Data deletion
+6. Data security
+7. Data integrity
+8. Backup and recovery
+9. Concurrency control
+10. Transaction management
+
+Database:
+A database is an organized collection of related data.
+
+Table:
+A table stores data in rows and columns.
+
+Record:
+A record is a single row in a table.
+
+Field:
+A field is a column that represents a specific attribute.
+
+Primary Key:
+A primary key uniquely identifies each record in a table.
+
+Foreign Key:
+A foreign key connects one table to another by referencing a primary key.
+
+SQL:
+SQL stands for Structured Query Language. It is used to interact with relational databases.
+
+Types of SQL Commands:
+
+DDL:
+CREATE
+ALTER
+DROP
+TRUNCATE
+
+DML:
+INSERT
+UPDATE
+DELETE
+
+DQL:
+SELECT
+
+DCL:
+GRANT
+REVOKE
+
+TCL:
+COMMIT
+ROLLBACK
+SAVEPOINT
+
+Advantages of DBMS:
+- Reduces data redundancy
+- Improves data security
+- Maintains data consistency
+- Supports data sharing
+- Provides backup and recovery
+- Supports multiple users
+- Maintains data integrity
