@@ -31,7 +31,7 @@ The structure is designed to keep theoretical concepts and practical SQL operati
 ## Repository Structure
 
 ```text id="9dn6qk"
-dbms/
+database-management-system/
 │
 ├── basics/
 │   ├── dbms_concepts.txt
